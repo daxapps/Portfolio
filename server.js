@@ -12,12 +12,12 @@ var sassPath = path.join(__dirname, 'sass');
 
 // mailer smtpTransporter configuration
 var transporter = nodemailer.createTransport(smtpTransport({
-  service: 'Gmail',
-  secureConnection: false,
+  host: 'smtp.ethereal.email',
   port: 587,
+  secure: false,
   auth: {
-    user: process.env['GMAIL'],  // need env variables here
-    pass: process.env['GPASS']
+    user: account.user, 
+    pass: account.pass
   }
 }));
 
@@ -48,7 +48,7 @@ app.get('/', function(req, res){
 // mailer request
 app.get('/send', function(req, res){
   var mailerOptions = {
-    to: 'daxapps777@gmail.com.com',
+    to: 'daxapps777@gmail.com',
     from: req.query.email,
     subject: req.query.name,
     text: req.query.content
