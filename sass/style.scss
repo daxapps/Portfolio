@@ -73,7 +73,7 @@ a:active {
   
 // Header Styles
 #masthead {
-  background: linear-gradient(rgba(40, 44, 55, 0.5), rgba(40, 44, 55, 0.5)), url("/images/newportfoliobg1.jpg");
+  background: linear-gradient(rgba(40, 44, 55, 0.5), rgba(40, 44, 55, 0.5)), url("/images/portfolioHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -81,7 +81,7 @@ a:active {
   position: relative;
   overflow: hidden;
   @media(max-width: 780px)  {
-    background: linear-gradient(rgba(40, 44, 55, 0.5), rgba(40, 44, 55, 0.5)), url("/images/newportfoliobg1-sm.jpg");
+    background: linear-gradient(rgba(40, 44, 55, 0.5), rgba(40, 44, 55, 0.5)), url("/images/portfolioHeader-sm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
