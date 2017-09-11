@@ -72,29 +72,4 @@ $(document).ready(function(){
     $(this).children('img').removeClass('zoom-in');
     $(this).children('.overlay').fadeToggle('slow');
   });
-  
-  // Contact Form
-  var email;
-  var name;
-  var content;
-  var message = $('#message');
-  $('#submit').click(function(e){
-    e.preventDefault();
-    email = $('#email').val();
-    name = $('#name').val();
-    content = $('#content').val();
-    if (email === '' || name === '' || content === '') {
-      message.text('One or more fields have been left blank.');
-    } else {
-      message.text('Sending your message...Please wait');
-      $.get('/send', {email: email, name: name, content: email + ' said: ' + content}, function(data){
-        if(data === 'sent') {
-          $('#email').val('');
-          $('#name').val('');
-          $('#content').val('');
-          message.text('Message sent! Thank you for contacting me!');
-        }
-      });
-    }
-  });
 });
