@@ -102,9 +102,9 @@ a:active {
       text-transform: uppercase;
       letter-spacing: .1rem;
       margin-top: -10px;
+      font-weight: 700;
     }
     h2 {
-      font-weight: 700;
       margin-left: 0.5em;
       margin-right: 0.5em;
       margin-bottom: 0;
@@ -125,7 +125,7 @@ a:active {
   .about-text {
     width: 60%;
     margin: 4rem auto;
-    text-align: left;
+    text-align: center;
     @media(max-width: 600px) {
       width: 80%;
       margin: 2rem auto;
@@ -158,7 +158,6 @@ a:active {
     }
   }
   .project-description {
-    color: $grey-blue;
     hr {
       margin: 1.5rem auto;
       width: 50%;
@@ -168,7 +167,6 @@ a:active {
     }
   }
   .mobile-project-description {
-    color: $grey-blue;
     display: none;
     hr {
       width: 50%;
@@ -182,10 +180,22 @@ a:active {
     transform: translateX(70px);
     transition: all 500ms ease-in-out;
   }
+  #text-align-right {
+    text-align: right;
+    @media(max-width: 500px) {
+      text-align: center;
+    }
+  }
   .evenrow {
     opacity: 0;
     transform: translateX(-70px);
     transition: all 500ms ease-in-out;
+  }
+  #text-align-left {
+    text-align: left;
+    @media(max-width: 500px) {
+      text-align: center;
+    }
   }
   .oddshow {
     opacity: 1;
@@ -236,7 +246,7 @@ a:active {
 
 #contact-section {
   text-align: center;
-  padding: 1rem 0 9rem;
+  padding: 1rem 0;
   background-color: $dark-color;
   .section-header {
     margin-top: 5rem;
@@ -293,7 +303,7 @@ a:active {
     li {
       padding-top: .5rem;
       margin: 0;
-      width: 80px;
+      width: 70px;
       display: inline-block;
       margin-right: -4px;
       border: 1px solid $grey-blue;
