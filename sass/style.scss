@@ -82,6 +82,7 @@ a:active {
   overflow: hidden;
   @media(max-width: 780px)  {
     background: linear-gradient(rgba(40, 44, 55, 0.5), rgba(40, 44, 55, 0.5)), url("/images/portfolioHeader-sm.jpg");
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -91,13 +92,7 @@ a:active {
     width: 100%;
     top: 40%;
     margin-top: -7rem;
-    color: $light-color;
-    .masthead-divider {
-      display: inline-block;
-      width: 10%;
-      margin: 0 .2rem;
-      border-top: 1px solid $light-color;
-    }
+    color: white;
     .masthead-title {
       display: inline-block;
       position: relative;
@@ -110,6 +105,8 @@ a:active {
     }
     h2 {
       font-weight: 700;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
       margin-bottom: 0;
       text-transform: uppercase;
     }
