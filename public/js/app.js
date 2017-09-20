@@ -55,7 +55,7 @@ $(document).ready(function(){
   $footer.on('mouseenter', function(){
     $(this).animate({'opacity': '1'}, 500);
   }).on('mouseleave', function(){
-    $(this).animate({'opacity': '0.5'}, 500);
+    // $(this).animate({'opacity': '0.5'}, 500);
   });
   
   // footer link for scrolling to contact form

@@ -251,34 +251,14 @@ a:active {
   .section-header {
     margin-top: 5rem;
   }
+  @media(max-width: 780px) {
+    padding: 0;
+  }
   .form-container {
     width: 50%;
     margin: 0 auto;
     @media(max-width: 780px) {
       width: 80%;
-    }
-    form {
-      margin-bottom: 0;
-      opacity: 0;
-      transition: all 700ms ease-in-out;
-      label {
-        color: $grey-blue;
-      }
-      input {
-        width: 90%;
-      }
-      textarea {
-        width: 90%;
-        resize: none;
-      }
-      button {
-        background-color: $primary-color;
-        color: $light-color;
-      }
-      #message {
-        color: $grey-blue;
-        margin-bottom: 0;
-      }
     }
   }
   p {
@@ -297,6 +277,8 @@ a:active {
   display: none;
   @media(max-width: 780px) {
     width: 100%;
+    opacity: 1.0;
+    background-color: white;
   }
   ul {
     margin: 0;
